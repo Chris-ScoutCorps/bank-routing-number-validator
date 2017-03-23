@@ -1,0 +1,25 @@
+{
+  "name": "bank-routing-number-validator",
+  "version": "0.0.1",
+  "description": "Validates ABA Routing Numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.3"
+  },
+  "keywords": [
+    "routing",
+    "number",
+    "bank",
+    "validate",
+    "ABA"
+  ],
+  "repository": {
+    "url": "git@github.com:drshaffopolis/bank-routing-number-validator.git",
+    "type": "git"
+  },
+  "author": "Chris Shaffer",
+  "license": "MIT"
+}
