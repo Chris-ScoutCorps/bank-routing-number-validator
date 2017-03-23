@@ -7,6 +7,10 @@ module.exports = {
 
 
 function ABARoutingNumberIsValid(routingNumberToTest) {
+  if (!routingNumberToTest) { //all 0's is technically a valid routing number, but it's inactive
+    return false;
+  }
+
   var routing = routingNumberToTest.toString();
   while (routing.length < 9) {
     routing = '0' + routing; //I refuse to import left-pad for this

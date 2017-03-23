@@ -31,4 +31,8 @@ describe('ABA Routing Number Tests',function() {
     assert.equal(val.ABARoutingNumberIsValid(322271628), false);
   });
 
+  it('Should fail a null',function() {
+    assert.equal(val.ABARoutingNumberIsValid(null), false);
+  });
+
 });
