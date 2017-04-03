@@ -19,6 +19,10 @@ describe('ABA Routing Number Tests',function() {
     assert.equal(val.ABARoutingNumberIsValid(322271627), true);
   });
 
+  it('Should pass this real bank routing number',function() {
+    assert.equal(val.ABARoutingNumberIsValid('061102400'), true);
+  });
+
   it('Dopes are going to make these ints so we should handle it',function() {
     assert.equal(val.ABARoutingNumberIsValid(21000021), true);
   });

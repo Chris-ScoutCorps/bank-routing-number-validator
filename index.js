@@ -41,5 +41,5 @@ function ABARoutingNumberIsValid(routingNumberToTest) {
     sum += parseInt(routing[i]) * weights[i % 3];
   }
 
-  return (10 - (sum % 10)) === parseInt(routing[8]);
+  return (10 - (sum % 10)) % 10 === parseInt(routing[8]);
 }
