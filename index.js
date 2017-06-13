@@ -11,6 +11,12 @@ function ABARoutingNumberIsValid(routingNumberToTest) {
     return false;
   }
 
+  // Routing numbers provided as strings should be the correct length
+  if (typeof(routingNumberToTest) === 'string' && routingNumberToTest.length !== 9) {
+    return false;
+  }
+
+  // Pad numbers with 0s
   var routing = routingNumberToTest.toString();
   while (routing.length < 9) {
     routing = '0' + routing; //I refuse to import left-pad for this
