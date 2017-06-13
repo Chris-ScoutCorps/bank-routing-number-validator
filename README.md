@@ -21,6 +21,6 @@ brnv = require('bank-routing-number-validator')
 brnv.ABARoutingNumberIsValid('abcdabcde') //false
 brnv.ABARoutingNumberIsValid('1234567890') //false
 brnv.ABARoutingNumberIsValid('021000021') //true
-brnv.ABARoutingNumberIsValid(021000021) //true
+brnv.ABARoutingNumberIsValid(21000021) //true
 
 ```
