@@ -39,4 +39,8 @@ describe('ABA Routing Number Tests',function() {
     assert.equal(val.ABARoutingNumberIsValid(null), false);
   });
 
+  it('Should fail on a string with too few digits', function () {
+    assert.equal(val.ABARoutingNumberIsValid('11111111'), false);
+    assert.equal(val.ABARoutingNumberIsValid('21000021'), false);
+  });
 });
